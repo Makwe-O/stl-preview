@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="header">Cognisense Stl Viewer</h1>
+      <section>
+        <div id="model"></div>
+        <p>Drag anywhere on the box to rotate the image</p>
+      </section>
+    </div>
+    <script type="text/javascript">
+      window.onload = function () {
+        STLViewer('hook.stl', 'model');
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r120/three.min.js"
+      integrity="sha512-kgjZw3xjgSUDy9lTU085y+UCVPz3lhxAtdOVkcO4O2dKl2VSBcNsQ9uMg/sXIM4SoOmCiYfyFO/n1/3GSXZtSg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/STLLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

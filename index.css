@@ -1,0 +1,32 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2a2a2a;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+#model {
+  box-shadow: 0px 0px 4px rgba(229, 229, 229, 0.2);
+  background-color: #e3e3e3;
+  border-radius: 14px;
+  margin: 0 auto;
+  height: 600px;
+  width: 800px;
+}
+.header {
+  animation: intro 1.2s ease-in;
+}
+section {
+  animation: intro 2s ease-in;
+}
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
